@@ -62,6 +62,7 @@ export class ProductListComponent implements OnInit {
             price: 35.95,
             starRating: 4.6,
             imageUrl: 'assets/images/xbox-controller.png'
+          }
     ];
 
     constructor() {}
