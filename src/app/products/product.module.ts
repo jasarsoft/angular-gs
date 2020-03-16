@@ -11,7 +11,12 @@ import { ProductDetailGuard } from './product-detail.guard';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ProductListComponent,
+    ProductDetailComponent,
+    ConvertToSpacesPipe,
+    StarComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -19,12 +24,6 @@ import { ProductDetailGuard } from './product-detail.guard';
         { path: 'products', component: ProductListComponent },
         { path: 'products/:id', canActivate: [ProductDetailGuard], component: ProductDetailComponent },
     ])
-  ],
-  declarations: [
-      ProductListComponent,
-      ProductDetailComponent,
-      ConvertToSpacesPipe,
-      StarComponent
   ]
 })
 export class ProductModule { }
